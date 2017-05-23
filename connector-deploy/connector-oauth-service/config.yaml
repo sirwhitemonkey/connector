@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: connector-oauth
+spec:
+  type: NodePort
+  #clusterIP: 10.3.254.90
+  ports:
+    - port: 2088
+      nodePort: 30140
+  selector:
+    name: connector-oauth
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+ name: connector-oauth
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: connector-oauth
+      labels:
+        name: connector-oauth
+        app: connector-oauth
+    spec:
+      containers:
+        - name: connector-oauth
+          image: asia.gcr.io/connectors-166702/connector-oauth
+          ports:
+            - containerPort: 2088

@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: connector-tax
+  labels:
+    name: connector-tax
+spec:
+  containers:
+    - name: connector-tax
+      image: asia.gcr.io/connectors-166702/connector-tax
+      ports:
+        - containerPort: 2098

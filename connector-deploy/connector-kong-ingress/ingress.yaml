@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: connectors-xmdevelopments-net
+  namespace: connector
+  annotations:
+      kubernetes.io/ingress.global-static-ip-name: connectors-xmdevelopments-net
+      #kolihub.io/connectors.xmdevelopments.net: primary
+
+spec:
+  rules:
+  - host: connectors.xmdevelopments.net
+    http:
+      paths:
+      - backend:
+          serviceName: connector-service
+          servicePort: 3002
+      - path: /service
+        backend:
+          serviceName: connector-oauth
+          servicePort: 2088
+      - path: /catalogue
+        backend:
+          serviceName: connector-catalogue
+          servicePort: 2092

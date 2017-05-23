@@ -1,0 +1,133 @@
+[
+  {
+    "category": "Core",
+    "details": [
+      {
+        "item": "Java"
+      },
+      {
+        "item": "Spring"
+      },
+      {
+        "item": "JPA && Hibernate"
+      },
+      {
+        "item": "Apache Camel"
+      }
+    ]
+  },
+  {
+    "category": "ESB integration for third party gateways {i.e payment, catalogue,correspondence,shipping,tax,loyalty}",
+    "details": [
+      {
+        "item": "Apache ServiceMix && Apache Camel"
+      }
+    ]
+  },
+  {
+    "category": "Micro server",
+    "details": [
+      {
+        "item": "SpringBoot"
+      }
+    ]
+  },
+  {
+    "category": "API Gateway Platform",
+    "details": [
+      {
+        "item": "KONG"
+      }
+    ]
+  },
+  {
+    "category": "Container Automation and Platform",
+    "details": [
+      {
+        "item": "Kubernetes"
+      },
+      {
+        "item": "Docker"
+      }
+    ]
+  },
+  {
+    "category": "Database",
+    "details": [
+      {
+        "item": "MySql"
+      }
+    ]
+  },
+  {
+    "category": "Repository",
+    "details": [
+      {
+        "item": "Git"
+      }
+    ]
+  },
+  {
+    "category": "Cloud Service",
+    "details": [
+      {
+        "item": "Amazon Web Service(AWS)"
+      },
+      {
+        "item": "Google Cloud"
+      }
+    ]
+  },
+  {
+    "category": "Automation",
+    "details": [
+      {
+        "item": "Maven"
+      }
+    ]
+  },
+  {
+    "category": "CI",
+    "details": [
+      {
+        "item": "Jenkins"
+      }
+    ]
+  },
+  {
+    "category": "BDD",
+    "details": [
+      {
+        "item": "Cucumber"
+      }
+    ]
+  },
+  {
+    "category": "Code Convention Standard",
+    "details": [
+      {
+        "item": "Check Style"
+      },
+      {
+        "item": "PMD"
+      }
+    ]
+  },
+  {
+    "category": "Api UI Interface",
+    "details": [
+      {
+        "item": "Swagger UI"
+      },
+      {
+        "item": "AngularJS"
+      },
+      {
+        "item": "NodeJS"
+      },
+      {
+        "item": "SASS"
+      }
+    ]
+  }
+]

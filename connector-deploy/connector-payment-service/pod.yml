@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: connector-payment
+  labels:
+    name: connector-payment
+spec:
+  containers:
+    - name: connector-payment
+      image: asia.gcr.io/connectors-166702/connector-payment
+      ports:
+        - containerPort: 2090

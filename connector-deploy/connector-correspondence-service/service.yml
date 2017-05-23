@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: connector-correspondence
+spec:
+  type: NodePort
+  #clusterIP: 10.0.0.51
+  clusterIP: 10.3.245.78
+  ports:
+    - port: 2094
+      nodePort: 30050
+  selector:
+    name: connector-correspondence

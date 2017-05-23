@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configures the Camel Context -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camel="http://camel.apache.org/schema/spring"
+	xsi:schemaLocation="
+      http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<camel:camelContext id="sphere-camel-connector" managementNamePattern="#name#-#counter#">
+		<camel:template id="producerTemplate" />
+		<camel:consumerTemplate id="consumerTemplate" />
+
+	<camel:threadPoolProfile id="default-threadpool-profile"
+		defaultProfile="true" poolSize="30" maxPoolSize="50" />
+	
+	</camel:camelContext>
+
+</beans>

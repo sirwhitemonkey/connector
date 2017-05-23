@@ -1,0 +1,29 @@
+[
+  {
+    "category": "Lead Developer",
+    "details": [
+      {
+        "item": "Rommel D Sumpo"
+      }
+    ]
+  },
+  {
+    "category": "Developers",
+    "details": [
+      {
+        "item": "Lasky Bontia"
+      },
+      {
+        "item": "Selim Muliello"
+      }
+    ]
+  },
+  {
+    "category": "QA Tester",
+    "details": [
+      {
+        "item": "Mary Laberinto"
+      }
+    ]
+  }
+]

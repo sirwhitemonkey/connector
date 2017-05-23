@@ -1,0 +1,18 @@
+version: '2'
+services:
+  payment:
+     build: .
+     hostname: payment
+     container_name: payment
+     image: connector/payment
+     restart: always
+     networks:
+       - public
+     ports:
+       - "2090:2090"
+     volumes:
+       - ./connector:/service/
+
+networks:
+  public:
+    driver: bridge

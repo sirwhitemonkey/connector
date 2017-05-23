@@ -1,0 +1,91 @@
+#!/bin/bash
+
+#connector.service
+curl -i -X DELETE "$1"/apis/connector.service
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.service' \
+--data 'upstream_url=http://10.3.244.234:3002' \
+--data 'uris=' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+#connector.oauth
+curl -i -X DELETE "$1"/apis/connector.oauth
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.oauth' \
+--data 'upstream_url=http://10.3.254.90:2088/service' \
+--data 'uris=/service' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+#connector.payment
+curl -i -X DELETE "$1"/apis/connector.payment
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.payment' \
+--data 'upstream_url=http://10.3.254.89:2090/payment' \
+--data 'uris=/payment' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+#connector.catalogue
+curl -i -X DELETE "$1"/apis/connector.catalogue
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.catalogue' \
+--data 'upstream_url=http://10.3.248.155:2092/catalogue' \
+--data 'uris=/catalogue' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+#connector.correspondence
+curl -i -X DELETE "$1"/apis/connector.correspondence
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.correspondence' \
+--data 'upstream_url=http://10.3.245.78:2094/correspondence' \
+--data 'uris=/correspondence' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+#connector.shipping
+curl -i -X DELETE "$1"/apis/connector.shipping
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.shipping' \
+--data 'upstream_url=http://10.3.248.12:2096/shipping' \
+--data 'uris=/shipping' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+#connector.tax
+curl -i -X DELETE "$1"/apis/connector.tax
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.tax' \
+--data 'upstream_url=http://10.3.246.65:2098/tax' \
+--data 'uris=/tax' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+#connector.loyalty
+curl -i -X DELETE "$1"/apis/connector.loyalty
+curl -i -X POST \
+--url "$1"/apis/ \
+--data 'name=connector.loyalty' \
+--data 'upstream_url=http://10.3.254.164:3000/loyalty' \
+--data 'uris=/loyalty' \
+--data 'methods=POST,GET,PUT,DELETE,OPTIONS'
+
+
+#plugins
+curl -i -X POST \
+--url "$1"/plugins/ \
+--data 'name=cors' \
+--data 'config.origins=*' \
+--data 'config.methods=GET,POST,DELETE,PUT' \
+--data 'config.headers=X-Frame-Options,Access-Control-Allow-Origin, Access-Control-Allow-Headers, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Auth-Token, Host' \
+--data 'config.exposed_headers=X-Frame-Options,Access-Control-Allow-Origin, Access-Control-Allow-Headers, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Auth-Token, Host' \
+--data 'config.credentials=true' \
+--data 'config.max_age=3600' \
+--data 'config.preflight_continue=false'
+
+curl -i -X POST \
+--url "$1"/plugins/ \
+--data 'name=oauth2' \
+--data 'config.enable_authorization_code=true'

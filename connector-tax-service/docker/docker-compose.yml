@@ -1,0 +1,18 @@
+version: '2'
+services:
+  tax:
+     build: .
+     hostname: tax
+     container_name: tax
+     image: connector/tax
+     restart: always
+     networks:
+       - public
+     ports:
+       - "2098:2098"
+     volumes:
+       - ./connector:/service/
+
+networks:
+  public:
+    driver: bridge

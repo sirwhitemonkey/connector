@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: connector-shipping
+  labels:
+    name: connector-shipping
+spec:
+  containers:
+    - name: connector-shipping
+      image: asia.gcr.io/connectors-166702/connector-shipping
+      ports:
+        - containerPort: 2096

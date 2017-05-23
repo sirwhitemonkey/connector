@@ -1,0 +1,8 @@
+<div class="tools">
+    <div ng-repeat="category in data">
+        <span class="font-medium">{{category.category}}</span>
+        <ul ng-repeat="detail in category.details">
+            <li><span class="font-small">{{detail.item}}</span></li>
+        </ul>
+    </div>
+</div>

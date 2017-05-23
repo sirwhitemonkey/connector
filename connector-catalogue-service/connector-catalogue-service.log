@@ -1,0 +1,74 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.2.RELEASE)
+
+2017-05-22 22:42:34.621  INFO 35855 --- [           main] c.x.connector.bootstrap.Application      : Starting Application v1.0 on Rommels-MacBook-Pro-2.local with PID 35855 (/Users/rommelsumpo/Development/connectors-springboot/connector-catalogue-service/target/connector-catalogue-service.war started by rommelsumpo in /Users/rommelsumpo/Development/connectors-springboot/connector-catalogue-service)
+2017-05-22 22:42:34.625  INFO 35855 --- [           main] c.x.connector.bootstrap.Application      : No active profile set, falling back to default profiles: default
+2017-05-22 22:42:34.699  INFO 35855 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5e91e4: startup date [Mon May 22 22:42:34 NZST 2017]; root of context hierarchy
+2017-05-22 22:42:35.316  INFO 35855 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'requestDataValueProcessor' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration; factoryMethodName=requestDataValueProcessor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebMvcSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.annotation.web.servlet.configuration.WebMvcSecurityConfiguration; factoryMethodName=requestDataValueProcessor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/security/config/annotation/web/servlet/configuration/WebMvcSecurityConfiguration.class]]
+2017-05-22 22:42:36.201  INFO 35855 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4a4c5a64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-22 22:42:36.211  INFO 35855 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-22 22:42:36.214  INFO 35855 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@58c1670b' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-22 22:42:36.220  INFO 35855 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$6f20fd16] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-22 22:42:36.230  INFO 35855 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-22 22:42:36.456  INFO 35855 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2017-05-22 22:42:36.478  INFO 35855 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2017-05-22 22:42:36.541  WARN 35855 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-05-22 22:42:36.541  WARN 35855 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-05-22 22:42:36.575  INFO 35855 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2017-05-22 22:42:36.575  INFO 35855 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1879 ms
+2017-05-22 22:42:36.738  INFO 35855 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-22 22:42:36.739  INFO 35855 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-22 22:42:36.739  INFO 35855 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-22 22:42:36.739  INFO 35855 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-22 22:42:36.741  INFO 35855 --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-05-22 22:42:36.742  INFO 35855 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+com.xmdevelopments.connector.rest.CatalogueService : <Catalogue> initialised
+com.xmdevelopments.connector.oauth.configuration.SecurityConfig : AuthenticationManagerBuilder configured
+com.xmdevelopments.connector.oauth.configuration.SecurityConfig : HttpSecurity configured
+2017-05-22 22:42:37.223  INFO 35855 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@290d210d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4387b79e, org.springframework.security.web.header.HeaderWriterFilter@78047b92, org.springframework.security.web.csrf.CsrfFilter@3bd40a57, org.springframework.security.web.authentication.logout.LogoutFilter@7ea37dbf, com.xmdevelopments.connector.oauth.configuration.SecurityFilter@1d76aeea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fc229ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1198b989, org.springframework.security.web.session.SessionManagementFilter@79ca92b9, org.springframework.security.web.access.ExceptionTranslationFilter@11dc3715]
+2017-05-22 22:42:37.415  INFO 35855 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5e91e4: startup date [Mon May 22 22:42:34 NZST 2017]; root of context hierarchy
+2017-05-22 22:42:37.498  INFO 35855 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/catalogue/v1/test],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.xmdevelopments.connector.core.model.Response> com.xmdevelopments.connector.rest.CatalogueService.getTest(java.lang.String) throws java.lang.Exception
+2017-05-22 22:42:37.503  INFO 35855 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-22 22:42:37.503  INFO 35855 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-22 22:42:37.554  INFO 35855 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-22 22:42:37.554  INFO 35855 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-22 22:42:37.601  INFO 35855 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-22 22:42:37.766  INFO 35855 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-22 22:42:37.837  INFO 35855 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 2092 (http)
+2017-05-22 22:42:37.842  INFO 35855 --- [           main] c.x.connector.bootstrap.Application      : Started Application in 4.022 seconds (JVM running for 4.505)
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : doFilter()
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : authenticationProcessor() 
+2017-05-22 22:42:40.326  INFO 35855 --- [  XNIO-2 task-1] o.s.c.s.ClassPathXmlApplicationContext   : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4116cba5: startup date [Mon May 22 22:42:40 NZST 2017]; root of context hierarchy
+2017-05-22 22:42:40.329  INFO 35855 --- [  XNIO-2 task-1] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [camel-template.xml]
+2017-05-22 22:42:41.267  INFO 35855 --- [  XNIO-2 task-1] .a.c.c.x.AbstractCamelContextFactoryBean : Using custom default ThreadPoolProfile with id: default-threadpool-profile and implementation: org.apache.camel.model.ThreadPoolProfileDefinition@19b9f187
+2017-05-22 22:42:41.310  INFO 35855 --- [  XNIO-2 task-1] o.a.c.i.converter.DefaultTypeConverter   : Loaded 195 type converters
+2017-05-22 22:42:41.310  INFO 35855 --- [  XNIO-2 task-1] o.a.c.i.DefaultExecutorServiceManager    : Using custom DefaultThreadPoolProfile: ThreadPoolProfile[default-threadpool-profile (true) size:30-50, keepAlive: 60 SECONDS, maxQueue: 1000, allowCoreThreadTimeOut:false, rejectedPolicy:CallerRuns]
+2017-05-22 22:42:41.320  INFO 35855 --- [  XNIO-2 task-1] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: sphere-camel-connector) is starting
+2017-05-22 22:42:41.322  INFO 35855 --- [  XNIO-2 task-1] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2017-05-22 22:42:41.416  INFO 35855 --- [  XNIO-2 task-1] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2017-05-22 22:42:41.417  INFO 35855 --- [  XNIO-2 task-1] o.a.camel.spring.SpringCamelContext      : AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+2017-05-22 22:42:41.417  INFO 35855 --- [  XNIO-2 task-1] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2017-05-22 22:42:41.417  INFO 35855 --- [  XNIO-2 task-1] o.a.camel.spring.SpringCamelContext      : Total 0 routes, of which 0 are started.
+2017-05-22 22:42:41.417  INFO 35855 --- [  XNIO-2 task-1] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: sphere-camel-connector) started in 0.097 seconds
+2017-05-22 22:42:41.552  INFO 35855 --- [  XNIO-2 task-1] o.a.camel.component.http4.HttpComponent  : Created ClientConnectionManager org.apache.http.impl.conn.PoolingHttpClientConnectionManager@202dfc3
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : com.xmdevelopments.connector.oauth.exception.CredentialErrorException: Token not authenticated
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : doFilter()
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : authenticationProcessor() 
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : com.xmdevelopments.connector.oauth.exception.CredentialErrorException: Token not authenticated
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : doFilter()
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : authenticationProcessor() 
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : com.xmdevelopments.connector.oauth.exception.CredentialErrorException: Token not authenticated
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : doFilter()
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : authenticationProcessor() 
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : com.xmdevelopments.connector.oauth.exception.CredentialErrorException: Token not authenticated
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : doFilter()
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : authenticationProcessor() 
+com.xmdevelopments.connector.oauth.configuration.SecurityFilter : com.xmdevelopments.connector.oauth.exception.CredentialErrorException: Token not authenticated
+2017-05-22 22:47:04.177  INFO 35855 --- [       Thread-2] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5e91e4: startup date [Mon May 22 22:42:34 NZST 2017]; root of context hierarchy
+2017-05-22 22:47:04.179  INFO 35855 --- [       Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

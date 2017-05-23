@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: connectors-xmdevelopments-net
+  annotations:
+      kubernetes.io/ingress.global-static-ip-name: connectors-xmdevelopments-net
+spec:
+  rules:
+  - host: connectors.xmdevelopments.net
+    http:
+      paths:
+      - backend:
+          serviceName: kong-proxy
+          servicePort: 8000

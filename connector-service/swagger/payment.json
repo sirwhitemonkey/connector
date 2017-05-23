@@ -1,0 +1,112 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Payment Service",
+    "title": "Payment Service",
+    "version": "1.0",
+    "contact": {
+      "name": "connector@xmdevelopments.com"
+    },
+    "license": {
+      "name": "eCommerceConnector",
+      "url": ""
+    }
+  },
+  "host": "HOST_SOURCE",
+  "schemes": [
+    "http"
+  ],
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Api",
+      "description": "Services"
+    }
+  ],
+  "paths": {
+    "/payment/v1/test": {
+      "get": {
+        "tags": [
+          "Api"
+        ],
+        "summary": "Test service",
+        "description": "Test service",
+        "operationId": "getTestUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "header",
+            "description": "Token",
+            "required": true,
+            "type": "string",
+            "input": "text"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          },
+          "503": {
+            "description": "Service not available"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Response": {
+      "properties": {
+        "data": {
+          "type": "object"
+        },
+        "elapsedExecutionTime": {
+          "$ref": "#/definitions/ElapseExecutionTime"
+        },
+        "hasError": {
+          "type": "boolean"
+        },
+        "responseCode": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "ElapseExecutionTime": {
+      "properties": {
+        "elapsed": {
+          "type": "string"
+        },
+        "endTime": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "startTime": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    }
+  }
+}
+

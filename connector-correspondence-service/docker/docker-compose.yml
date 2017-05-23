@@ -1,0 +1,18 @@
+version: '2'
+services:
+  correspondence:
+     build: .
+     hostname: correspondence
+     container_name: correspondence
+     image: connector/correspondence
+     restart: always
+     networks:
+       - public
+     ports:
+       - "2094:2094"
+     volumes:
+       - ./connector:/service/
+
+networks:
+  public:
+    driver: bridge

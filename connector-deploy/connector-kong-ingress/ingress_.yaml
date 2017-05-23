@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: connectors-xmdevelopments-com
+  annotations:
+    kolihub.io/connectors.xmdevelopments.com: primary
+spec:
+    rules:
+    - host: connectors.service
+      http:
+        paths:
+        - path: /service
+          backend:
+            serviceName: connector-service
+            servicePort: 3002

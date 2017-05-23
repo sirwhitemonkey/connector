@@ -1,0 +1,12 @@
+.metadata
+.recommenders
+RemoteSystemsTempFiles
+*.zip
+*.jar
+*.war
+node_modules
+bower_components
+target
+connector-service/docker/connector/app/**
+connector-deploy/connector-service/app/**
+connector-deploy/connector-service/swagger
